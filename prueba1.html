@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9405e66e3f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="repo.js"></script>
+    <title>Kyclops</title>
+</head>
+<body>
+  <i class="fa-solid fa-user"></i>
+  <i class="fa-solid fa-user"></i>
+  <button class="play">
+    <span class="material-symbols-outlined">
+      play_arrow
+      </span>
+  </button>
+  
+  <script type="text/javascript">
+    const audio = new Audio("https://stream-57.zeno.fm/n0x77d1wgxhvv?zs=wPnj9E61RYOQlAWlujmVXw&acu-uid=740185130608&dyn-uid=06030001_63699dfba30c9&cto-uid=19eb6570-782c-47a6-b1a0-6cc56158f212-6369bff0-4d58&bsw-uid=affb6bd0-7a48-4726-86ca-28788be6d5fc&triton-uid=cookie%3Ae84e532d-c273-4f95-863e-d551d8bf924e&adt-uid=cuid_b59cf751-5f0d-11ed-ad14-129d177c1666");
+    const buttons = document.querySelectorAll("button");
+    
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        audio.play();
+      });
+    });
+    
+    </script>
+
+</body>
+</html>
